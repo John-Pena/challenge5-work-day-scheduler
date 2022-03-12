@@ -27,7 +27,7 @@ $('[data-time]').each(function(index) {
 $('.saveBtn').click(function() {
     console.log($(this).prev().val());
     // save text input into localStorage as value
-    var text = $(this).sibling('time-block').val();
+    var text = $(this).prev().val();
     // saves time attribute to Local Sotrage as key value
     var time = $(this).parent().attr('id');
 
@@ -35,17 +35,17 @@ $('.saveBtn').click(function() {
 });
 
 var loadTasks = function() {
-    $('hour-9')
-    $('hour-10')
-    $('hour-11')
-    $('hour-12 time-block').val(localStorage.getItem('12'));
-    $('hour-1')
-    $('hour-2')
-    $('hour-3')
-    $('hour-4')
-    $('hour-5')
+    $('#text9')
+    $('#text10')
+    $('#text11')
+    $('#text12').text(localStorage.getItem('hour-12'));
+    $('#text1')
+    $('#text2')
+    $('#text3')
+    $('#text4')
+    $('#text5')
 
     console.log('saved tasks found!');
-}
+};
 
 loadTasks();
