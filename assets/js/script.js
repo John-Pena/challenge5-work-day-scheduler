@@ -35,15 +35,15 @@ $('.saveBtn').click(function() {
 });
 
 var loadTasks = function() {
-    $('#text9')
-    $('#text10')
-    $('#text11')
+    $('#text9').text(localStorage.getItem('hour-9'));
+    $('#text10').text(localStorage.getItem('hour-10'));
+    $('#text11').text(localStorage.getItem('hour-11'));
     $('#text12').text(localStorage.getItem('hour-12'));
-    $('#text1')
-    $('#text2')
-    $('#text3')
-    $('#text4')
-    $('#text5')
+    $('#text1').text(localStorage.getItem('hour-13'));
+    $('#text2').text(localStorage.getItem('hour-14'));
+    $('#text3').text(localStorage.getItem('hour-15'));
+    $('#text4').text(localStorage.getItem('hour-16'));
+    $('#text5').text(localStorage.getItem('hour-17'));
 
     console.log('saved tasks found!');
 };
