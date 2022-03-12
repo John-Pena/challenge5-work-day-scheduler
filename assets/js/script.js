@@ -1,3 +1,5 @@
+var tasks = [];
+
 // call this function to pass the date
 $(document).ready(function () {
     $('#currentDay').text(moment().format('ddd MMM Do YYYY'));
@@ -22,7 +24,8 @@ $('[data-time]').each(function(index) {
 });
 
 $('.saveBtn').click(function() {
-    localStorage.setItem("tasks", JSON.stringify(tasks));
+    console.log($(this).prev().val());
+   taskText = localStorage.setItem("data-time", $(this).prev().val());
 });
 
 var loadTasks = function() {
