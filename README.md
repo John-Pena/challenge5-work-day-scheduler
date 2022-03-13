@@ -28,4 +28,4 @@
 
 https://john-pena.github.io/challenge5-work-day-scheduler/
 
-[!screenshout][
+[!screenshot][
