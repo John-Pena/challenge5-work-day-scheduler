@@ -20,7 +20,6 @@ $('[data-time]').each(function(index) {
     else {
         $(this).parent().next().addClass('future');
     }
- 
 });
 
 // function to save tasks into local storage
